@@ -1,2 +1,1 @@
-# Circular_Cylinder
-Laminar Flow over 2D circular cylinder for Reynolds Number 100
+# Laminar Flow over 2D Cylinder at Reynolds Number 100
