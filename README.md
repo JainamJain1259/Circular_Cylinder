@@ -9,6 +9,8 @@ Simulation was carried on a machine running with Ubuntu 18.04. Serial as well as
 
 ## Overview:
 #### Aim is to calculate the Drag Coefficient(Cd) and Strouhal's Number and verify them with the literature.
+
+#### Specifications:
 - Reynolds Number = 100
 - Diameter of the Cylinder = 1 m
 - Inlet Velocity = 1 m/s
