@@ -7,4 +7,9 @@ This is a part of our project titled **Flow over Rough and Engineered Surfaces**
 
 Simulation was carried on a machine running with Ubuntu 18.04. Serial as well as parallel modes were used.
 
-## HighLights
+## Overview:
+#### Aim is to calculate the Drag Coefficient(Cd) and Strouhal's Number and verify them with the literature.
+- Reynolds Number = 100
+- Diameter of the Cylinder = 1 m
+- Inlet Velocity = 1 m/s
+- Kinematic Viscosity = 0.01 m2/s
