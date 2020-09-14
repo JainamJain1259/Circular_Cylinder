@@ -17,7 +17,11 @@ Simulation was carried on a machine running with Ubuntu 18.04. Serial as well as
 
 ## Domain Description:
 
-The domain is a cuboid of length 33m, height 16m and depth 1m. The Bounding Box is (-8 -8 -0.5) (25 8 0.5). The cylinder is located at origin(0 0 0). The cylinder is fixed with diameter 1m which is taken as characteristic length. From the origin, the domain extends 25m to the east, 8m to north, 8m to south and 8m to west. The domain for fixed flow over circular cylinder can be seen in figure.
+The domain is a cuboid of length 33m, height 16m and depth 1m. The Bounding Box is (-8 -8 -0.5) (25 8 0.5). The cylinder is located at origin(0 0 0). The cylinder is fixed with diameter 1m which is taken as characteristic length. From the origin, the domain extends 25m to the east, 8m to north, 8m to south and 8m to west. The domain for fixed flow over circular cylinder can be seen in figure. 
 
+The mesh is very fine near the periphery of the cylinder as well as in the wake region behind the cylinder to capture the vortex shedding of the flow. Grading is done to get coarser mesh at the boundries.  The total number of nodes (nPoints) are 120336. The total number of elements (nCells) are 59640. The images of mesh near the periphery of cylinder and overall are shown below: 
+
+
+. 
 
 
