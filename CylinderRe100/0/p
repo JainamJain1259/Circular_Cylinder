@@ -1,0 +1,69 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    down
+    {
+        type            symmetryPlane;
+    }
+
+    right
+    {
+        type            fixedValue;
+        value		 uniform 0;
+    }
+    up
+    {
+        type symmetryPlane;
+    }
+    left
+    {
+        type zeroGradient;
+    }
+    cylinder
+    {
+    	type zeroGradient;
+    }
+    
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+
+/* Note:
+  A. Pressure Inlet conditions:
+    1. Fixed static pressure: see fixed value
+    2. Flow inlet: see zero gradient
+    3. Fan pressure
+  
+  B. Pressure Outlet Condition:
+    1. Static pressure: see fixed value
+    2. Fan pressure
+    3. Total pressure
+   
+  C. Pressure Wall Conditions:
+    1. Zero gradient
+ */
+
+
+
+// ************************************************************************* //

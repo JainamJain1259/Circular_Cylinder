@@ -1,0 +1,81 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (1 0 0);
+
+boundaryField
+{
+    down 
+    {
+        type            symmetryPlane;
+   
+    }
+
+    up
+    {
+        type            symmetryPlane;
+    }
+    
+    left
+    {
+    	type uniformFixedValue;
+    	uniformValue constant (1 0 0);
+    }
+    
+    right
+    {
+    	type zeroGradient;
+    }
+    
+    cylinder
+    {
+    	type fixedValue;
+    	value uniform (0 0 0);
+    }	
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+
+/* Note:
+
+  A. Velocity inlet Conditions:  
+    1. Fixed velocity: fixed value
+    2. Flow rate
+    3. TurbulentDigitalFilterInlet
+    4. Turbulence DF-SEM
+    
+  B. Velocity Outlet Conditions:
+    1. Blocked return flow: see inlet outlet
+    2. Outflow: see zero gradient. Note: unstable for reverse flow
+    3. Pressure-inlet outlet velocity
+    
+  C. Velocity Wall Conditions:
+    1. No slip
+    2. Translating wall velocity
+    3. Moving wall velocity
+    
+*/
+
+
+
+
+// ************************************************************************* //
+
+
