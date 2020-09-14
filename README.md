@@ -5,4 +5,4 @@ This is a part of our project titled **Flow over Rough and Engineered Surfaces**
 - Guidance : Dr. Sudhakar Yogaraj
 - Email : {jainam.jain.18003, tushya.chheda.18003,sudhakar}@iitgoa.ac.in
 
-Simulation was carried on a machine running with Ubuntu 18.04
+Simulation was carried on a machine running with Ubuntu 18.04. Serial as well as parallel modes were used.
