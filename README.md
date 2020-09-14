@@ -15,7 +15,8 @@ Simulation was carried on a machine running with Ubuntu 18.04. Serial as well as
 - Inlet Velocity = 1 m/s
 - Kinematic Viscosity = 0.01 m2/s
 
-##Domain Description:
+## Domain Description:
+
 The domain is a cuboid of length 33m, height 16m and depth 1m. The Bounding Box is (-8 -8 -0.5) (25 8 0.5). The cylinder is located at origin(0 0 0). The cylinder is fixed with diameter 1m which is taken as characteristic length. From the origin, the domain extends 25m to the east, 8m to north, 8m to south and 8m to west. The domain for fixed flow over circular cylinder can be seen in figure.
 
 
