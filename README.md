@@ -38,7 +38,25 @@ The mesh is very fine near the periphery of the cylinder as well as in the wake 
 
 ## Running the Case:
 1. To Mesh: 
-> blockMesh
+> $ blockMesh
+
+2. To check Mesh quality:
+> $ checkMesh
+
+3.To run simulation in serial: 
+> $ icoFoam
+
+4.To run simulation in parallel:
+    a. First Decompose the mesh in to number of sub-regions by running
+    > $ decomposePar
+    b. To run the parallel simulations:
+    > $ mpirun -np 4 icoFoam -parallel
+    c. Reconstruct the solution using:
+    > $ reconstructPar
+5. Convert the files into VTK format(to visualize in Paraview)
+> $ foamToVTK
+
+6. The postProcessing is done using Paraview 5.8.2(select .vtu format file)
 
 
 
