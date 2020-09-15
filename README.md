@@ -47,12 +47,16 @@ The mesh is very fine near the periphery of the cylinder as well as in the wake 
 > $ icoFoam
 
 4.To run simulation in parallel:
+
     a. First Decompose the mesh in to number of sub-regions by running
-    > $ decomposePar
+> $ decomposePar
+
     b. To run the parallel simulations:
-    > $ mpirun -np 4 icoFoam -parallel
+> $ mpirun -np 4 icoFoam -parallel
+
     c. Reconstruct the solution using:
-    > $ reconstructPar
+> $ reconstructPar
+
 5. Convert the files into VTK format(to visualize in Paraview)
 > $ foamToVTK
 
