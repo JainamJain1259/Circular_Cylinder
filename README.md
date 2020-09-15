@@ -21,6 +21,8 @@ The domain is a cuboid of length 33m, height 16m and depth 1m. The Bounding Box 
 
 The mesh is very fine near the periphery of the cylinder as well as in the wake region behind the cylinder to capture the vortex shedding of the flow. Grading is done to get coarser mesh at the boundries.  The total number of nodes (nPoints) are 120336. The total number of elements (nCells) are 59640. The images of mesh near the periphery of cylinder and overall are shown below: 
 
+![2](https://user-images.githubusercontent.com/69717816/93166816-e62c9000-f73c-11ea-91e1-d6730c4ffdfb.jpg)
+
 ## Boundary Conditions: 
 #### Velocity Conditions:
 - Inlet  : 1 m/s (Ux = 1, Uy = 0, Uz = 0)
