@@ -62,6 +62,9 @@ The mesh is very fine near the periphery of the cylinder as well as in the wake 
 
 6. The postProcessing is done using Paraview 5.8.1(select .vtu format file)
 
+## Output:
+The Drag Coefficient for Reynold's Number = 100 was verified with the literature. To calculate the Strouhals Number, Lift Coefficient(Cl) v/s Time is extracted from the solution and the main frequency was calculaed using FFT(Fast Fourier Transformation) 
+
 
 
 . 
