@@ -23,15 +23,15 @@ The mesh is very fine near the periphery of the cylinder as well as in the wake 
 
 ## Boundary Conditions: 
 #### Velocity Conditions:
-- Inlet : 1 m/s (Ux = 1, Uy = 0, Uz = 0)
+- Inlet  : 1 m/s (Ux = 1, Uy = 0, Uz = 0)
 - Outlet : zero Gradient
-- Top : symmertryPlane
+- Top    : symmertryPlane
 - Bottom : symmetry Plane
 
 #### Pressure Conditions : 
-- Inlet : zero Gradient
+- Inlet  : zero Gradient
 - Outlet : 0 Pascal
-- Top : symmetryPlane
+- Top    : symmetryPlane
 - Bottom : symmetryPlane
 
 
