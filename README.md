@@ -27,12 +27,19 @@ The mesh is very fine near the periphery of the cylinder as well as in the wake 
 - Outlet : zero Gradient
 - Top    : symmertryPlane
 - Bottom : symmetry Plane
+- Cylinder : noSlip
 
 #### Pressure Conditions : 
 - Inlet  : zero Gradient
 - Outlet : 0 Pascal
 - Top    : symmetryPlane
 - Bottom : symmetryPlane
+- Cylinder : zeroGradient
+
+## Running the Case:
+1. To Mesh: 
+> blockMesh
+
 
 
 . 
