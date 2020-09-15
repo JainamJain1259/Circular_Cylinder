@@ -60,7 +60,7 @@ The mesh is very fine near the periphery of the cylinder as well as in the wake 
 5. Convert the files into VTK format(to visualize in Paraview)
 > $ foamToVTK
 
-6. The postProcessing is done using Paraview 5.8.2(select .vtu format file)
+6. The postProcessing is done using Paraview 5.8.1(select .vtu format file)
 
 
 
